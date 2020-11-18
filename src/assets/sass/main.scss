@@ -1,11 +1,10 @@
-@import "overrides";
+@import "./overrides";
 
 // Creating base layout
-@import "abstracts/index";
-@import "base/index";
-@import "layout/index";
+@import "./abstracts/index";
+@import "./base/index";
+@import "./layout/index";
 
 // Creating base layout
-@import "common/index";
-@import "modules/index";
-@import "vendors/index";
+@import "./common/index";
+@import "./modules/index";

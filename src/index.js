@@ -1,12 +1,24 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import { Card, Container } from "components";
+import "./assets/sass/main.scss";
 
-class Def extends Component {
+import { Card, Container, CardImage } from "./ui/components";
+
+class CardExample extends Component {
   render() {
-    return <div>Test</;
+    return (
+      <Container fluid={true}>
+        <Card>
+          <CardImage
+            className="img-fluid"
+            src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+          />
+          Test
+        </Card>
+      </Container>
+    );
   }
 }
 
-ReactDOM.render(<Def />, document.getElementById("root"));
+ReactDOM.render(<CardExample />, document.getElementById("root"));
