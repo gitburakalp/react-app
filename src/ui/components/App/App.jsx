@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import * as Variables from "../../core/constants.js";
+import * as Variables from "../../../core/constants.js";
 
 class App extends Component {
   render() {
-    return <div>{Variables.API_URL}</div>;
+    return <div>Test</div>;
   }
 }
 
