@@ -5,15 +5,13 @@ import classNames from "classnames";
 const CardImage = props => {
   const { className, overlay, src, tag, ...attributes } = props;
 
-  const classes = classNames(top && "card-img-top", className);
+  const classes = classNames(className);
 
   const Tag = tag;
 
-  const innerContent = (
-    <Tag data-test="card-image" src={src} {...attributes} className={classes} />
-  );
+  const innerContent = <Tag src={src} {...attributes} className={classes} />;
 
-  return <div>{innerContent}</div>;
+  return <figure class="figure">{innerContent}</figure>;
 };
 
 CardImage.propTypes = {
